@@ -1,7 +1,17 @@
 [
     { "type": "escape", "width": 75 },
-    { "type": "brightnessDown", "bordered": false, "width": 50, "align": "left" },
-    { "type": "brightnessUp", "bordered": false, "width": 50, "align": "left" },
+    {
+        "type": "group",
+        "align": "left",
+        "title": "💡",
+        "items": [
+            { "type": "close", "width": 50, "align": "left" },
+            { "type": "brightnessDown", "bordered": true, "width": 75, "align": "left" },
+            { "type": "brightnessUp", "bordered": true, "width": 75, "align": "left" },
+            { "type": "illuminationDown", "bordered": true, "width": 75, "align": "left" },
+            { "type": "illuminationUp", "bordered": true, "width": 75, "align": "left" },
+        ]
+    },
     {
         "type": "appleScriptTitledButton",
         "source": {
@@ -19,7 +29,7 @@
     { "type": "play", "width": 75, "align": "right" },
     { "type": "volumeDown", "width": 50, "align": "right" },
     { "type": "volumeUp", "width": 50, "align": "right" },
-    { "type": "mute", "width": 50, "align": "right" },  
-    { "type": "weather", "bordered": false, "align": "right", "refreshInterval": 60, "units": "metric", "api_key": "" },
+    { "type": "mute", "width": 50, "align": "right" },
+    { "type": "dnd", "width": 50, "align": "right" },
     { "type": "timeButton", "bordered": false, "align": "right", "formatTemplate": "E d MMM, HH:mm" }
 ]
